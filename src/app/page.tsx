@@ -1,14 +1,9 @@
+import Hero from "@/components/hero";
+
 export default function Home() {
   return (
-    <div className="">
-      <h1>Tech book club</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi pariatur
-        sunt adipisci veritatis? Voluptas fuga architecto reiciendis sint earum
-        deserunt, itaque neque quidem sapiente eius. Doloribus, dolore error
-        ratione molestias quos recusandae maxime minus explicabo deleniti
-        commodi, provident tenetur veritatis.
-      </p>
+    <div className="w-full max-w-[375px] px-4">
+      <Hero />
     </div>
   );
 }
