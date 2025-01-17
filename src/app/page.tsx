@@ -1,9 +1,10 @@
-import Hero from "@/components/hero";
+import Container from "@/components/Container";
+import Hero from "@/components/hero/hero";
 
 export default function Home() {
   return (
-    <div className="w-full max-w-[375px] px-4">
+    <Container>
       <Hero />
-    </div>
+    </Container>
   );
 }

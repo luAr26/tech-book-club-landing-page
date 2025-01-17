@@ -29,6 +29,7 @@ export default function RootLayout({
         className={`${martianMono.variable} ${`${inter.variable}`} antialiased`}
       >
         {children}
+        <div className="main-bg"></div>
       </body>
     </html>
   );
