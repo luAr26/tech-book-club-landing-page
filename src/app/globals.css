@@ -20,10 +20,15 @@
   }
 }
 
-body {
-  color: var(--neutral-900);
-  background: var(--neutral-0);
-  font-family: var(--font-martian-mono), monospace;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    color: var(--neutral-900);
+    background: var(--neutral-0);
+    font-family: var(--font-martian-mono), monospace;
+  }
 }
 
 @layer utilities {
@@ -90,6 +95,10 @@ body {
   background-image: url("/images/pattern-light-bg.svg");
   z-index: -10;
   pointer-events: none;
+}
+
+.footer-bg {
+  background-image: url("/images/pattern-dark-bg.svg");
 }
 
 /* TABLET */

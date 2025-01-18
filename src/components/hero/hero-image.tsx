@@ -4,7 +4,7 @@ export default function HeroImage() {
   return (
     <>
       {/* Mobile image */}
-      <div className="relative mt-16 h-[372px] w-[343] overflow-hidden rounded-md md:hidden">
+      <div className="relative mt-16 h-[372px] w-full max-w-[343px] overflow-hidden rounded-md md:hidden">
         <Image
           src="/images/image-hero-mobile.webp"
           alt="People reading books together."
