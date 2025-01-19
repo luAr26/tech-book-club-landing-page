@@ -46,7 +46,7 @@ export default function PricingTable({
         ))}
       </ul>
       <button
-        className="ext-preset-6--mob md:text-preset-6 mt-8 inline-flex w-full justify-center rounded-lg border-2 border-neutral-900 bg-light-salmon-50 py-4 uppercase"
+        className="ext-preset-6--mob md:text-preset-6 mt-8 inline-flex w-full justify-center rounded-lg border-2 border-neutral-900 bg-light-salmon-50 py-4 uppercase hover:bg-gradient focus-visible:ring-2 focus-visible:ring-neutral-700 focus-visible:ring-offset-[3px]"
         onClick={() =>
           alert(`Thank you for choosing the ${nameText} membership.`)
         }

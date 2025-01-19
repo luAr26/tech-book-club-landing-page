@@ -74,19 +74,18 @@ export default function Benefits() {
       {/* Section 2 */}
       <div className="mt-16 md:mt-20 xl:mt-[120px] xl:flex xl:items-center xl:gap-10">
         <div>
-          <h2>
-            <h2 className="text-preset-2--mob md:text-preset-2 text-neutral-900">
-              Not your average <br />
-              book <span>club</span>
-            </h2>
-            <p className="text-preset-5 mt-6 text-neutral-700">
-              Connect with a community that speaks your language - from{" "}
-              <strong className="font-bold">Python</strong>
-              to <strong className="font-bold">TypeScript</strong> and
-              everything in between. Our discussions blend technical depth with
-              practical applications.
-            </p>
+          <h2 className="text-preset-2--mob md:text-preset-2 text-neutral-900">
+            Not your average <br />
+            book <span className="highlighted relative">club</span>
           </h2>
+
+          <p className="text-preset-5 mt-6 text-neutral-700">
+            Connect with a community that speaks your language - from{" "}
+            <strong className="font-bold">Python</strong>
+            to <strong className="font-bold">TypeScript</strong> and everything
+            in between. Our discussions blend technical depth with practical
+            applications.
+          </p>
         </div>
         {/* Mobile */}
         <div className="relative mt-10 h-[319px] w-full max-w-[343px] overflow-hidden rounded-[12.25px] md:hidden">

@@ -7,6 +7,7 @@ import IconArrowUp from "/public/images/icon-arrow-up.svg";
 export default function Footer() {
   const date = new Date();
   const year = date.getFullYear();
+
   return (
     <footer className="footer-bg rounded-t-xl bg-neutral-900">
       <Container>
@@ -16,7 +17,7 @@ export default function Footer() {
           </h2>
           <a
             href="#membership"
-            className="text-preset-6--mob md:text-preset-6 mb-1 mt-10 inline-flex items-center justify-between gap-4 rounded-lg border-2 border-neutral-0 bg-[transparent] px-6 py-5 uppercase text-neutral-0"
+            className="text-preset-6--mob md:text-preset-6 mb-1 mt-10 inline-flex items-center justify-between gap-4 rounded-lg border-2 border-neutral-0 bg-[transparent] px-6 py-5 uppercase text-neutral-0 hover:bg-gradient-to-r hover:from-neutral-700 hover:to-neutral-900 focus-visible:bg-gradient-to-r focus-visible:from-neutral-700 focus-visible:to-neutral-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-200 focus-visible:ring-offset-[3px] focus-visible:ring-offset-neutral-900"
           >
             <span>Review membership options </span>
             <Image

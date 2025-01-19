@@ -101,6 +101,34 @@
   background-image: url("/images/pattern-dark-bg.svg");
 }
 
+.highlighted::before {
+  content: "";
+  width: 109px;
+  height: 47px;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  background-image: url("/images/pattern-circle.png");
+  background-size: 109px 47px;
+  background-repeat: no-repeat;
+}
+
+.reading-journey-step::before {
+  content: "";
+  width: 80px;
+  height: 33px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("/images/pattern-arrow.svg");
+  background-size: 80px 33px;
+  background-repeat: no-repeat;
+}
+
+.reading-journey-step:last-child::before {
+  background-image: none;
+}
+
 /* TABLET */
 
 @media only screen and (min-width: 768px) {
@@ -109,5 +137,11 @@
     background-size: 684px;
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  .highlighted::before {
+    width: 159px;
+    height: 68px;
+    background-size: 159px 68px;
   }
 }
