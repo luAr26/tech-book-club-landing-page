@@ -9,8 +9,8 @@ import Testimonial from "@/components/testimonial/testimonial";
 export default function Home() {
   return (
     <>
+      <Hero />
       <Container>
-        <Hero />
         <Benefits />
         <ReadingJourney />
         <MembershipOptions />

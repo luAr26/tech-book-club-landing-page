@@ -31,7 +31,7 @@ export default function PricingTable({
     <div
       className={clsx(
         "rounded-lg border border-neutral-200 p-6 xl:self-center",
-        isPro && "bg-neutral-50 xl:px-6 xl:py-10",
+        isPro && "pricing-table-pro relative bg-neutral-50 xl:px-6 xl:py-10",
       )}
     >
       <h3 className="text-preset-4 text-neutral-900">{nameText}</h3>

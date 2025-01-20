@@ -86,15 +86,11 @@
   }
 }
 
-.main-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 90vh;
+.hero-main-bg {
+  position: relative;
   background-image: url("/images/pattern-light-bg.svg");
-  z-index: -10;
-  pointer-events: none;
+  background-color: var(--neutral-100);
+  overflow: hidden;
 }
 
 .footer-bg {
@@ -129,19 +125,43 @@
   background-image: none;
 }
 
+.pricing-table-pro {
+  overflow: hidden;
+  z-index: 1;
+}
+
+.pricing-table-pro::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 684px;
+  height: 684px;
+  bottom: -464px;
+  right: -240px;
+  background-image: url("/images/pattern-glow.svg");
+  background-size: 684px 684px;
+  background-repeat: no-repeat;
+}
+
 /* TABLET */
 
 @media only screen and (min-width: 768px) {
-  .hero-bg {
-    background-image: url("/images/pattern-glow.svg");
-    background-size: 684px;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
   .highlighted::before {
     width: 159px;
     height: 68px;
     background-size: 159px 68px;
+  }
+
+  .hero-main-bg::before,
+  .reading-journey-container::before {
+    content: "";
+    position: absolute;
+    width: 684px;
+    height: 684px;
+    bottom: -226px;
+    right: -392px;
+    background-image: url("/images/pattern-glow.svg");
+    background-size: 684px 684px;
+    background-repeat: no-repeat;
   }
 }
